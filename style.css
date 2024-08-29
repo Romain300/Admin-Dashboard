@@ -42,6 +42,8 @@ body {
     background-color: white;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .content {
@@ -58,8 +60,17 @@ ul {
     padding-left: 2rem;
 }
 
-svg {
+.dash {
     fill: white;
+    width: 1.3rem;
+}
+
+.title-dash {
+    fill: white;
+    width: 2.5rem;
+}
+
+label svg {
     width: 1.3rem;
 }
 
@@ -75,4 +86,43 @@ li {
     font-size: 1.6rem;
     align-items: center;
     padding-left: 1.5rem;
+}
+
+.left-header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 2rem;
+    
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+input {
+    background-color: whitesmoke;
+    border: none;
+    width: 80%;
+    height: 2rem;
+    border-radius: 1rem;
+}
+
+.profile-pic {
+    width: 4rem;
+    border-radius: 50%;
+
+}
+
+.profile-name {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
